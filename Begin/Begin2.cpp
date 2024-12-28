@@ -1,15 +1,14 @@
 #include <iostream>
 #include <cmath>
-using namespace std;
 
 int main()
 {
-	int a;
-	cin >> a;
+	int sideLength;
+	std::cin >> sideLength;
 
-	float area = std::pow(a, 2);
+	float areaOfSquare = std::pow(sideLength, 2);
 
-	cout << area;
+	std::cout << areaOfSquare;
+
 	return 0;
-
 }

@@ -1,21 +1,20 @@
 #include <iostream>
-using namespace std;
 
 int main()
 {
-	int a;
-	cout << "Enter a: " << endl;
-	cin >> a;
+	int sideLength;
+	std::cout << "Enter a: " << std::endl;
+	std::cin >> sideLength;
 
-	if (std::cin.fail() || a < 0)
+	if (std::cin.fail() || sideLength < 0)
 	{
 		std::cerr << "Invalid input. Please enter a valid integer." << std::endl;
 		return 1;
 	}
 
-	int perimeter = a * 4;
+	int perimeter = sideLength * 4;
 
-	cout << perimeter;
+	std::cout << perimeter;
 
 	return 0;
 }

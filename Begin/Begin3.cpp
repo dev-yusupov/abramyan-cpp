@@ -3,17 +3,19 @@ using namespace std;
 
 int main()
 {
-    int a, b;
+    int heightLength, widthLength;
 
-    cin >> a;
-    cin >> b;
+    cin >> heightLength;
+    cin >> widthLength;
 
-    int area = a * b;
-    int perimeter = 4 * (a + b);
+    int areaOfRectangle = heightLength * widthLength;
+    int perimeterOfRectangle = 4 * (heightLength + widthLength);
 
     cout << "Area: ";
-    cout << area << endl;
+    cout << areaOfRectangle << endl;
 
     cout << "Perimeter: ";
-    cout << perimeter << endl;
+    cout << perimeterOfRectangle << endl;
+
+    return 0;
 }
